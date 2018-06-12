@@ -3,19 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: 日常 | Hexo</title>
+  <title>git pull那些事 | Hexo</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/日常/index.html">
+  <meta name="description" content="用好gitpull">
+<meta name="keywords" content="git,pull">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git pull那些事">
+<meta property="og:url" content="http://yoursite.com/2018/06/12/git-pull那些事/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="用好gitpull">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-12T09:16:17.982Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="git pull那些事">
+<meta name="twitter:description" content="用好gitpull">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -161,61 +166,95 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-git-pull那些事" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/12/两台电脑管理static-page/" class="archive-article-date">
-  	<time datetime="2018-06-12T07:57:19.000Z" itemprop="datePublished">Jun 12</time>
+    <div class="article-meta">
+      <a href="/2018/06/12/git-pull那些事/" class="article-date">
+  	<time datetime="2018-06-12T09:06:25.000Z" itemprop="datePublished">2018-06-12</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/12/两台电脑管理static-page/">
-        管理static page
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
-      </a>
+  
+    <h1 class="article-title" itemprop="name">
+      git pull那些事
+      
     </h1>
   
 
-        <div class="article-info info-on-left">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pull/">pull</a></li></ul>
 	</div>
 
-          
+        
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/杂谈/">杂谈</a>
+	<a class="article-category-link" href="/categories/git/">git</a>
 	</div>
 
 
-          
-        </div>
+        
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>用好gitpull<br><a id="more"></a><br>git pull 命令用于从另一个存储仓库或本地分支获取并集成(整合).<br>git pull 命令的作用是:<br>    取回远程主机某个分支的更新，再与本地的制定分支合并</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull [option] [&lt;repository&gt; [&lt;refspec&gt;...]]</span><br></pre></td></tr></table></figure>
+<p>比如 要取回 origin主机的next分支，与本地的master分支合并<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin next:master</span><br></pre></td></tr></table></figure></p>
+<p>如果与本地当前分支合并则上条命令可以简写为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin next</span><br></pre></td></tr></table></figure></p>
+<h2 id="两条语句的区别"><a href="#两条语句的区别" class="headerlink" title="两条语句的区别"></a>两条语句的区别</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull -f origin master</span><br></pre></td></tr></table></figure>
+<p>本地强制上传远程，把远程覆盖<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull --rebase origin master</span><br></pre></td></tr></table></figure></p>
+<p>拉去远程的文件把本地的覆盖，再上传</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/06/12/两台电脑管理static-page/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">管理static page</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="git-pull那些事" data-title="git pull那些事" data-url="http://yoursite.com/2018/06/12/git-pull那些事/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="git pull那些事">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
 
 </div>
       <footer id="footer">
@@ -241,9 +280,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}
