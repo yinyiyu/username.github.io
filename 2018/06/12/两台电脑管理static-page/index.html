@@ -3,19 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2018/5 | Hexo</title>
+  <title>管理static page | Hexo</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2018/05/index.html">
+  <meta name="description" content="如何管理自己的static page">
+<meta name="keywords" content="日常">
+<meta property="og:type" content="article">
+<meta property="og:title" content="管理static page">
+<meta property="og:url" content="http://yoursite.com/2018/06/12/两台电脑管理static-page/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="如何管理自己的static page">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-12T08:30:09.864Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="管理static page">
+<meta name="twitter:description" content="如何管理自己的static page">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -161,92 +166,93 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-两台电脑管理static-page" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/11/我的第一篇文章/" class="archive-article-date">
-  	<time datetime="2018-05-11T10:39:02.000Z" itemprop="datePublished">May 11</time>
+    <div class="article-meta">
+      <a href="/2018/06/12/两台电脑管理static-page/" class="article-date">
+  	<time datetime="2018-06-12T07:57:19.000Z" itemprop="datePublished">2018-06-12</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/11/我的第一篇文章/">
-        我的第一篇文章
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
-      </a>
+  
+    <h1 class="article-title" itemprop="name">
+      管理static page
+      
     </h1>
   
 
-        <div class="article-info info-on-left">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/测试/">测试</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
 	</div>
 
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/hexo/">hexo</a>
-	</div>
-
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/09/hello-world/" class="archive-article-date">
-  	<time datetime="2018-05-09T14:34:44.000Z" itemprop="datePublished">May 9</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/09/hello-world/">
-        Hello World
         
-      </a>
-    </h1>
-  
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/杂谈/">杂谈</a>
+	</div>
 
-        <div class="article-info info-on-left">
-          
-          
 
-          
-        </div>
+        
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>如何管理自己的static page<br><a id="more"></a><br>自从在github上面搭建了static page后就没有怎么管理过了，<br>突然想着把管理static page的过程记录一下，一面自己后面又忘记了</p>
+<h2 id="常用名命令"><a href="#常用名命令" class="headerlink" title="常用名命令"></a>常用名命令</h2><h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h3 id="清除缓存文件-db-json-和已生成的静态文件-public"><a href="#清除缓存文件-db-json-和已生成的静态文件-public" class="headerlink" title="清除缓存文件 db.json 和已生成的静态文件 public"></a>清除缓存文件 db.json 和已生成的静态文件 public</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean<span class="string">"</span></span><br></pre></td></tr></table></figure>
+<p>###常用命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>###常用命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy -g</span><br><span class="line">hexo server -g</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/05/11/我的第一篇文章/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一篇文章</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="两台电脑管理static-page" data-title="管理static page" data-url="http://yoursite.com/2018/06/12/两台电脑管理static-page/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="管理static page">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
 
 </div>
       <footer id="footer">
@@ -272,8 +278,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false
